@@ -9,5 +9,4 @@ test("count", async ({ page }) => {
 
   expect(await page.locator("li.s-item[data-gr4]").count()).toEqual(120);
 
-  // await expect()
 });
