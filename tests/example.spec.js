@@ -1,5 +1,5 @@
 // @ts-check
-const { test, expect } = require("@playwright/test");
+import { test, expect } from "playwright/test";
 
 test("Проверка заголовка", async ({ page }) => {
   await page.goto("https://playwright.dev/");
@@ -18,4 +18,8 @@ test("Отображается ссылка Get started", async ({ page }) => {
   await expect(
     page.getByRole("heading", { name: "Installation" })
   ).toBeVisible();
+});
+
+test("Мой первый тест", () => {
+  console.log("Hello, Inzhenerka.Tech!");
 });
