@@ -1,4 +1,9 @@
+import { Locator, Page } from "playwright";
+
 export class MainPage {
+  page: Page;
+  cookieAcceptButton: Locator;
+  searchField: Locator;
   constructor(page) {
     // вот его нам выдали при создании теста
     this.page = page; // сохраняем локально
