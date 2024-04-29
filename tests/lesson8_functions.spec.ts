@@ -19,7 +19,7 @@ test("Поиск по сайту", async ({ page }) => {
   await cartPage.expectTotalPrice(priceToBe);
 });
 
-test("lesson8", async ({ page }) => {
+test("lesson8", async ({ page, browser }) => {
   const mainPage = new MainPage(page);
   const resultPage = new ResultPage(page);
   const cartPage = new CartPage(page);
