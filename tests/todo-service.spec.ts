@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, Fixtures } from "@playwright/test";
 import fs from "fs";
 import { title } from "process";
 
