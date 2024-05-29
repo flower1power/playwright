@@ -1,4 +1,5 @@
-const { test, expect } = require("@playwright/test");
+import { test, expect } from "@playwright/test";
+
 
 test("screenshot", async ({ page }) => {
   await page.goto("http://uitestingplayground.com/sampleapp");

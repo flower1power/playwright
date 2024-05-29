@@ -1,4 +1,5 @@
-const { test, expect } = require("@playwright/test");
+import { test, expect } from "@playwright/test";
+
 
 test("lesson4_count", async ({ page }) => {
   await page.goto("https://sky-todo-list.herokuapp.com/", {

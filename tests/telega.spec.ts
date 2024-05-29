@@ -26,5 +26,4 @@ test("Телега", async ({ request }) => {
   );
 
   expect(responseSendMessage.ok()).toBeTruthy();
-  console.log(chatId);
 });
