@@ -1,12 +1,11 @@
-import { test, expect } from "@playwright/test";
+import { test } from '@playwright/test';
 
-test("fill", async ({ page }) => {
-  await page.goto("http://uitestingplayground.com/sampleapp");
+test('fill', async ({ page }) => {
+  await page.goto('http://uitestingplayground.com/sampleapp');
 
-  await page.getByPlaceholder("User Name").fill("testLogin");
-  await page.getByPlaceholder("********").fill("pwd");
-  await page.getByRole('')
+  await page.getByPlaceholder('User Name').fill('testLogin');
+  await page.getByPlaceholder('********').fill('pwd');
 
-  await page.getByRole("button", { name: "Log In" }).click();
-  await page.getByText("Welcome, testLogin!").isVisible();
+  await page.getByRole('button', { name: 'Log In' }).click();
+  await page.getByText('Welcome, testLogin!').isVisible();
 });

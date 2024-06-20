@@ -1,8 +1,8 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from '@playwright/test';
 
-test("checkboxes", async ({ page }) => {
-  await page.goto("http://the-internet.herokuapp.com/checkboxes");
-  const form = page.locator("#checkboxes input");
+test('checkboxes', async ({ page }) => {
+  await page.goto('http://the-internet.herokuapp.com/checkboxes');
+  const form = page.locator('#checkboxes input');
   const cb1 = form.nth(0);
   const cb2 = form.nth(1);
 

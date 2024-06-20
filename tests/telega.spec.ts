@@ -1,7 +1,7 @@
-import { test, expect } from "playwright/test";
+import { test, expect } from 'playwright/test';
 
-test("Телега", async ({ request }) => {
-  const botToken = "7035378292:AAG3ve2M9w0ibY_maK17lmAXI5Gs7S4hV6M";
+test('Телега', async ({ request }) => {
+  const botToken = '7035378292:AAG3ve2M9w0ibY_maK17lmAXI5Gs7S4hV6M';
 
   const responseGetMe = await request.get(
     `https://api.telegram.org/bot${botToken}/getMe`
@@ -20,7 +20,7 @@ test("Телега", async ({ request }) => {
     {
       form: {
         chat_id: chatId,
-        text: "Привет, мир! Это сообщение отправлено через мой бот.",
+        text: 'Привет, мир! Это сообщение отправлено через мой бот.',
       },
     }
   );
